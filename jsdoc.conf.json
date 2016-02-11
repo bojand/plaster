@@ -21,7 +21,7 @@
     },
     "meta": {
       "title": "Plaster",
-      "description": "Simple Mongoose-inspired Schema based Javascript Object Modelling",
+      "description": "Simple Mongoose-inspired schema based Javascript object modelling",
       "keyword": ""
     },
     "linenums": true
