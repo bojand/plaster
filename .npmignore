@@ -1,0 +1,13 @@
+*.orig
+.idea
+.DS_Store
+node_modules
+dump.rdb
+npm-debug.log
+temp
+.tmp/
+tmp
+/test/
+/.npmignore
+docs
+.nyc_output
