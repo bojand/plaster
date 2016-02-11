@@ -32,11 +32,11 @@ console.log(kitty);
 
 ## Guide
 
-[Modelling](#model)
-[Middleware](#middleware)
-[Types](#types)
-[Schema Extending](#extend)
-[Errors](#errors)
+* [Modelling](#model)
+* [Middleware](#middleware)
+* [Types](#types)
+* [Schema Extending](#extend)
+* [Errors](#errors)
 
 ## Modelling <a id="model"></a>
 
