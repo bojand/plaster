@@ -134,7 +134,11 @@ userSchema.virtual('fullName', {
 
 var User = plaster.model('User', userSchema);
 var user = new User({firstName: 'Bob', lastName: 'Smith'});
-console.log(user.firstName); // Bob Smith
+console.log(user.fullName); // Bob Smith
+user.fullName = 'Jim Jones';
+console.log(user.fullName); // Jim Jones
+console.log(user.firstName); // Jim
+console.log(user.lastName); // Jones
 ```
 
 If no `set` function is defined the virtual is read-only.
@@ -570,6 +574,6 @@ Uses modified code from [node-schema-object](https://github.com/scotthovestadt/n
 
 ## License
 
-Copyright 2016 Bojan Djurkovic
+Copyright 2016 Bojan D
 
 Licensed under the MIT License.

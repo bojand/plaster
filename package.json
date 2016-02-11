@@ -1,7 +1,7 @@
 {
   "name": "plaster",
   "description": "Simple Mongoose-inspired schema based Javascript object modelling",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/bojand/plaster",
   "license": "MIT",
   "repository": {
@@ -16,7 +16,7 @@
   },
   "main": "index.js",
   "author": {
-    "name": "Bojan Djurkovic <dbojan@gmail.com>"
+    "name": "Bojan D <dbojan@gmail.com>"
   },
   "scripts": {
     "test": "npm run dist && mocha --harmony --harmony_proxies",

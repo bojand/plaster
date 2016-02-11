@@ -45,6 +45,6 @@ Uses modified code from [node-schema-object](https://github.com/scotthovestadt/n
 
 ## License
 
-Copyright 2016 Bojan Djurkovic
+Copyright 2016 Bojan D
 
 Licensed under the MIT License.
