@@ -14,7 +14,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "main": "dist/index.js",
+  "main": "index.js",
   "author": {
     "name": "Bojan Djurkovic <dbojan@gmail.com>"
   },
