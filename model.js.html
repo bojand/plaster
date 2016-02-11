@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Plaster</title>
+    
+    <meta name="description" content="Simple Mongoose-inspired schema based Javascript object modelling" />
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":true},"applicationName":"Plaster","disqus":"","googleAnalytics":"","openGraph":{"title":"","type":"website","image":"","site_name":"","url":""},"meta":{"title":"Plaster","description":"Simple Mongoose-inspired schema based Javascript object modelling","keyword":""},"linenums":true};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">Plaster</a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+
+    
+        <li class="item" data-name="Model">
+            <span class="title">
+                <a href="Model.html">Model</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="Model#modelName"><a href="Model.html#modelName">modelName</a></li>
+            
+                <li data-name="Model#schema"><a href="Model.html#schema">schema</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Model#clear"><a href="Model.html#clear">clear</a></li>
+            
+                <li data-name="Model#clearErrors"><a href="Model.html#clearErrors">clearErrors</a></li>
+            
+                <li data-name="Model#getErrors"><a href="Model.html#getErrors">getErrors</a></li>
+            
+                <li data-name="Model#hasErrors"><a href="Model.html#hasErrors">hasErrors</a></li>
+            
+                <li data-name="Model#inspect"><a href="Model.html#inspect">inspect</a></li>
+            
+                <li data-name="Model#set"><a href="Model.html#set">set</a></li>
+            
+                <li data-name="Model#toJSON"><a href="Model.html#toJSON">toJSON</a></li>
+            
+                <li data-name="Model#toObject"><a href="Model.html#toObject">toObject</a></li>
+            
+                <li data-name="Model#toString"><a href="Model.html#toString">toString</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="ModelArray">
+            <span class="title">
+                <a href="ModelArray.html">ModelArray</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="ModelInstance">
+            <span class="title">
+                <a href="ModelInstance.html">ModelInstance</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="ModelInstance.modelName"><a href="ModelInstance.html#.modelName">modelName</a></li>
+            
+                <li data-name="ModelInstance.schema"><a href="ModelInstance.html#.schema">schema</a></li>
+            
+                <li data-name="ModelInstance#modelName"><a href="ModelInstance.html#modelName">modelName</a></li>
+            
+                <li data-name="ModelInstance#schema"><a href="ModelInstance.html#schema">schema</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="ModelInstance#clear"><a href="ModelInstance.html#clear">clear</a></li>
+            
+                <li data-name="ModelInstance#clearErrors"><a href="ModelInstance.html#clearErrors">clearErrors</a></li>
+            
+                <li data-name="ModelInstance#getErrors"><a href="ModelInstance.html#getErrors">getErrors</a></li>
+            
+                <li data-name="ModelInstance#hasErrors"><a href="ModelInstance.html#hasErrors">hasErrors</a></li>
+            
+                <li data-name="ModelInstance#inspect"><a href="ModelInstance.html#inspect">inspect</a></li>
+            
+                <li data-name="ModelInstance#set"><a href="ModelInstance.html#set">set</a></li>
+            
+                <li data-name="ModelInstance#toJSON"><a href="ModelInstance.html#toJSON">toJSON</a></li>
+            
+                <li data-name="ModelInstance#toObject"><a href="ModelInstance.html#toObject">toObject</a></li>
+            
+                <li data-name="ModelInstance#toString"><a href="ModelInstance.html#toString">toString</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Plaster">
+            <span class="title">
+                <a href="Plaster.html">Plaster</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="Plaster#Model"><a href="Plaster.html#Model">Model</a></li>
+            
+                <li data-name="Plaster#ModelArray"><a href="Plaster.html#ModelArray">ModelArray</a></li>
+            
+                <li data-name="Plaster#Plaster"><a href="Plaster.html#Plaster">Plaster</a></li>
+            
+                <li data-name="Plaster#Schema"><a href="Plaster.html#Schema">Schema</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Plaster#get"><a href="Plaster.html#get">get</a></li>
+            
+                <li data-name="Plaster#getModel"><a href="Plaster.html#getModel">getModel</a></li>
+            
+                <li data-name="Plaster#model"><a href="Plaster.html#model">model</a></li>
+            
+                <li data-name="Plaster#modelNames"><a href="Plaster.html#modelNames">modelNames</a></li>
+            
+                <li data-name="Plaster#schema"><a href="Plaster.html#schema">schema</a></li>
+            
+                <li data-name="Plaster#set"><a href="Plaster.html#set">set</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Schema">
+            <span class="title">
+                <a href="Schema.html">Schema</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Schema#add"><a href="Schema.html#add">add</a></li>
+            
+                <li data-name="Schema#extend"><a href="Schema.html#extend">extend</a></li>
+            
+                <li data-name="Schema#get"><a href="Schema.html#get">get</a></li>
+            
+                <li data-name="Schema#method"><a href="Schema.html#method">method</a></li>
+            
+                <li data-name="Schema#post"><a href="Schema.html#post">post</a></li>
+            
+                <li data-name="Schema#pre"><a href="Schema.html#pre">pre</a></li>
+            
+                <li data-name="Schema#queue"><a href="Schema.html#queue">queue</a></li>
+            
+                <li data-name="Schema#set"><a href="Schema.html#set">set</a></li>
+            
+                <li data-name="Schema#static"><a href="Schema.html#static">static</a></li>
+            
+                <li data-name="Schema#virtual"><a href="Schema.html#virtual">virtual</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="model.js.html">Source: model.js</h1>
+        
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const _ = require('lodash');
+const clone = require('clone');
+
+import _privateKey from './privatekey'
+
+import { typecast, getFunctionName } from './utils';
+import { ModelArray } from './modelarray'
+
+const _reservedFields = ['super'];
+
+// Add field to schema and initializes getter and setter for the field.
+function addToSchema(index, properties) {
+  this.schema.add(index, properties);
+
+  defineGetter.call(this[_privateKey]._getset, index, this.schema.descriptor[index]);
+  defineSetter.call(this[_privateKey]._getset, index, this.schema.descriptor[index]);
+}
+
+// Defines getter for specific field.
+function defineGetter(index, properties) {
+  // If the field type is an alias, we retrieve the value through the alias's index.
+  let indexOrAliasIndex = properties.type === 'alias' ? properties.index : index;
+
+  this.__defineGetter__(index, () => {
+    try {
+      return getter.call(this, this[_privateKey]._obj[indexOrAliasIndex], properties);
+    } catch (error) {
+      // This typically happens when the default value isn't valid -- log error.
+      this[_privateKey]._errors.push(error);
+    }
+  });
+}
+
+// Defines setter for specific field.
+function defineSetter(index, properties) {
+  this.__defineSetter__(index, (value) => {
+    // Don't proceed if readOnly is true.
+    if (properties.readOnly) {
+      return;
+    }
+
+    // call custom validate if specified
+    if (properties.validate) {
+      if (!properties.validate.call(this, value)) {
+        return;
+      }
+    }
+
+    try {
+      // this[_privateKey]._this[index] is used instead of this[_privateKey]._obj[index] to route through the public interface.
+      writeValue.call(this[_privateKey]._this, typecast.call(this, value, this[_privateKey]._this[index], properties), properties);
+    } catch (error) {
+      // Setter failed to validate value -- log error.
+      this[_privateKey]._errors.push(error);
+    }
+  });
+
+  // Aliased fields reflect values on other fields and do not need to be initialized.
+  if (properties.isAlias === true) {
+    return;
+  }
+
+  if (properties.virtual === true) {
+    return;
+  }
+
+  // In case of object &amp; array, they must be initialized immediately.
+  if (properties.type === 'object') {
+    if (properties.default !== undefined) {
+      writeValue.call(this[_privateKey]._this, _.isFunction(properties.default) ? properties.default.call(this) : properties.default, properties);
+    } else {
+      writeValue.call(this[_privateKey]._this, properties.objectType ? new properties.objectType : {}, properties);
+    }
+
+    // Native arrays are never used so that toArray can be globally supported.
+    // Additionally, other properties such as unique rely on passing through us.
+  } else if (properties.type === 'array') {
+    writeValue.call(this[_privateKey]._this, new ModelArray(this, properties), properties);
+  }
+}
+
+// Used to fetch current values.
+function getter(value, properties) {
+  // Most calculations happen within the typecast and the value passed is typically the value we want to use.
+  // Typically, the getter just returns the value.
+  // Modifications to the value within the getter are not written to the object.
+
+  // Getter can transform value after typecast.
+  if (properties.get) {
+    value = properties.get.call(this, value);
+  }
+
+  return value;
+}
+
+// Used to write value to object.
+function writeValue(value, fieldSchema) {
+  // onBeforeValueSet allows you to cancel the operation.
+  // It doesn't work like transform and others that allow you to modify the value because all typecast has already happened.
+  // For use-cases where you need to modify the value, you can set a new value in the handler and return false.
+  if (this.schema.options.onBeforeValueSet) {
+    if (this.schema.options.onBeforeValueSet.call(this, fieldSchema.name, value) === false) {
+      return;
+    }
+  }
+
+  // Alias simply copies the value without actually writing it to alias index.
+  // Because the value isn't actually set on the alias index, onValueSet isn't fired.
+  if (fieldSchema.type === 'alias') {
+    this[fieldSchema.index] = value;
+    return;
+  }
+
+  // if virtual and set specified call it
+  if (fieldSchema.virtual === true) {
+    if (fieldSchema.set) {
+      value = fieldSchema.set.call(this, value);
+    }
+    else {
+      return;
+    }
+  }
+
+  // Write the value to the inner object.
+  this[_privateKey]._obj[fieldSchema.name] = value;
+
+  // onValueSet notifies you after a value has been written.
+  if (this.schema.options.onValueSet) {
+    this.schema.options.onValueSet.call(this, value, fieldSchema.name);
+  }
+}
+
+// Reset field to default value.
+function clearField(index, properties) {
+  // Aliased fields reflect values on other fields and do not need to be cleared.
+  if (properties.isAlias === true) {
+    return;
+  }
+
+  // In case of object &amp; array, they must be initialized immediately.
+  if (properties.type === 'object') {
+    if (this[properties.name].clear) {
+      this[properties.name].clear();
+    }
+    else {
+      writeValue.call(this[_privateKey]._this, undefined, properties);
+    }
+
+    // Native arrays are never used so that toArray can be globally supported.
+    // Additionally, other properties such as unique rely on passing through Model.
+  } else if (properties.type === 'array') {
+    this[properties.name].length = 0;
+
+    // Other field types can simply have their value set to undefined.
+  } else {
+    writeValue.call(this[_privateKey]._this, undefined, properties);
+  }
+}
+
+export class Model {
+  /**
+   * @classdesc Model class represents an actual instance of an object. Clients do not create Models. Generated Models from
+   * schema extend this class.
+   *
+   * @description Clients do not need to create Models manually.
+   * @class
+   * @param values
+   * @param options
+   * @param schema
+   * @param name
+   * @returns {Model}
+   */
+  constructor(values, options, schema, name) {
+    // Object used to store internals.
+    const _private = this[_privateKey] = {};
+
+    // Object with getters and setters bound.
+    _private._getset = this;
+
+    // Public version of ourselves.
+    // Overwritten with proxy if available.
+    _private._this = this;
+
+    // Object used to store raw values.
+    _private._obj = {};
+
+    /**
+     * Schema the schema of this model. This is both a static and instance property.
+     * @member {Schema}
+     */
+    this.schema = schema;
+
+    if (name) {
+      /**
+       * The name the name of the model. This is both a static and instance property.
+       * @member {String}
+       * @example
+       * var schema = plaster.schema({ name: String });
+       * var Cat = plaster.model('Cat', schema);
+       * var kitty = new Cat({ name: 'Zildjian' });
+       * console.log(Cat.modelName); // 'Cat'
+       * console.log(kitty.modelName); // 'Cat'
+       */
+      this.modelName = name;
+    }
+
+    // Errors, retrieved with getErrors().
+    _private._errors = [];
+
+    // Reserved keys for storing internal properties accessible from outside.
+    _private._reservedFields = {};
+
+    // Define getters/typecasts based off of schema.
+    _.each(schema.descriptor, (properties, index) => {
+      // Use getter / typecast to intercept and re-route, transform, etc.
+      defineGetter.call(_private._getset, index, properties);
+      defineSetter.call(_private._getset, index, properties);
+    });
+
+    // Proxy used as interface to object allows to intercept all access.
+    // Without Proxy we must register individual getter/typecasts to put any logic in place.
+    // With Proxy, we still use the individual getter/typecasts, but also catch values that aren't in the schema.
+    if (typeof(Proxy) !== 'undefined') {
+      const proxy = this[_privateKey]._this = new Proxy(this, {
+        // Ensure only public keys are shown
+        ownKeys: (target) => {
+          return Object.keys(this.toObject());
+        },
+
+        // Return keys to iterate
+        enumerate: (target) => {
+          return Object.keys(this[_privateKey]._this)[Symbol.iterator]();
+        },
+
+        // Check to see if key exists
+        has: (target, key) => {
+          return !!_private._getset[key];
+        },
+
+        // Ensure correct prototype is returned.
+        getPrototypeOf: () => {
+          return _private._getset;
+        },
+
+        // Ensure readOnly fields are not writeable.
+        getOwnPropertyDescriptor: (target, key) => {
+          return {
+            value: proxy[key],
+            writeable: schema.descriptor[key].readOnly !== true,
+            enumerable: true,
+            configurable: true
+          };
+        },
+
+        // Intercept all get calls.
+        get: (target, name, receiver) => {
+          // First check to see if it's a reserved field.
+          if (_reservedFields.includes(name)) {
+            return this[_privateKey]._reservedFields[name];
+          }
+
+          // Support dot notation via lodash.
+          if (this.schema.options.dotNotation &amp;&amp; name.indexOf('.') !== -1) {
+            return _.get(this[_privateKey]._this, name);
+          }
+
+          // Use registered getter without hitting the proxy to avoid creating an infinite loop.
+          return this[name];
+        },
+
+        // Intercept all set calls.
+        set: (target, name, value, receiver) => {
+          // Support dot notation via lodash.
+          if (this.schema.options.dotNotation &amp;&amp; name.indexOf('.') !== -1) {
+            return _.set(this[_privateKey]._this, name, value);
+          }
+
+          if (!schema.descriptor[name]) {
+            if (this.schema.options.strict) {
+              // Strict mode means we don't want to deal with anything not in the schema.
+              // TODO: SetterError here.
+              return;
+            } else {
+              // Add index to schema dynamically when value is set.
+              // This is necessary for toObject to see the field.
+              addToSchema.call(this, name, {type: 'any'});
+            }
+          }
+
+          // This hits the registered setter but bypasses the proxy to avoid an infinite loop.
+          this[name] = value;
+        },
+
+        // Intercept all delete calls.
+        deleteProperty: (target, property) => {
+          this[property] = undefined;
+          return true;
+        }
+      });
+    }
+
+    // Populate schema defaults into object.
+    _.each(schema.descriptor, (properties, index) => {
+      if (properties.default !== undefined) {
+        // Temporarily ensure readOnly is turned off to prevent the set from failing.
+        const readOnly = properties.readOnly;
+        properties.readOnly = false;
+        this[index] = _.isFunction(properties.default) ? properties.default.call(this) : properties.default;
+        properties.readOnly = readOnly;
+      }
+    });
+
+    // Populate runtime values as provided to this instance of object.
+    if (_.isObject(values)) {
+      var data = values;
+      if (options.clone) {
+        data = clone(values);
+      }
+      this.set(data);
+    }
+
+    // if they supplied init() method
+    if (this.init &amp;&amp; _.isFunction(this.init)) {
+      this.init();
+    }
+
+    // May return actual object instance or Proxy, depending on harmony support.
+    return this[_privateKey]._this;
+  }
+
+  /**
+   * Sets data on the model based on the schema.
+   * Accepts a key of property and value for the property, or object representing the data for document.
+   *
+   * @api public
+   * @example
+   * user.set('fistName', 'Joe');
+   * user.set({ lastName: 'Smith');
+   */
+  set(path, value) {
+    if (_.isObject(path) &amp;&amp; !value) {
+      value = path;
+      for (const key in value) {
+        this[_privateKey]._this[key] = value[key];
+      }
+    }
+    else {
+      this[path] = value;
+    }
+  }
+
+  /**
+   *
+   * @param options
+   * @param json
+   * @returns {{}}
+   * @private
+   */
+  _toObject(options, json) {
+    var defaultOptions = {transform: true, json: json, minimize: true};
+
+    // When internally saving this document we always pass options,
+    // bypassing the custom schema options.
+    if (!(options &amp;&amp; 'Object' === getFunctionName(options.constructor)) ||
+      (options &amp;&amp; options.$_useSchemaOptions)) {
+      if (json) {
+        options = this.schema.options.toJSON ?
+          clone(this.schema.options.toJSON) : {};
+        options.json = true;
+        options.$_useSchemaOptions = true;
+      } else {
+        options = this.schema.options.toObject ?
+          clone(this.schema.options.toObject) : {};
+        options.json = false;
+        options.$_useSchemaOptions = true;
+      }
+    }
+
+    for (var key in defaultOptions) {
+      if (defaultOptions.hasOwnProperty(key) &amp;&amp; options[key] === undefined) {
+        options[key] = defaultOptions[key];
+      }
+    }
+
+    // remember the root transform function
+    // to save it from being overwritten by sub-transform functions
+    var originalTransform = options.transform;
+
+    let ret = {};
+
+    // Populate all properties in schema.
+    _.each(this.schema.descriptor, (properties, index) => {
+      // Do not write values to object that are marked as invisible.
+      if (properties.invisible &amp;&amp; !properties.virtual) {
+        return;
+      }
+
+      if (properties.virtual &amp;&amp; !options.virtuals) {
+        return;
+      }
+
+      // Fetch value through the public interface.
+      let value = this[_privateKey]._this[index];
+
+      if (value === undefined &amp;&amp; options.minimize) {
+        return;
+      }
+
+      // Clone objects so they can't be modified by reference.
+      if (typeof value === 'object') {
+        if (value._isModelObject) {
+          if (options &amp;&amp; options.json &amp;&amp; 'function' === typeof value.toJSON) {
+            value = value.toJSON(options);
+          } else {
+            value = value.toObject(options);
+          }
+        } else if (value._isModelArray) {
+          value = value.toArray();
+        } else if (_.isArray(value)) {
+          value = value.splice(0);
+        } else if (_.isDate(value)) {
+          // https://github.com/documentcloud/underscore/pull/863
+          // _.clone doesn't work on Date object.
+          var d = new Date(value.getTime());
+          if (options.dateToISO === true) {
+            ret[index] = d.toISOString();
+          }
+          else {
+            ret[index] = new Date(value.getTime());
+          }
+        } else {
+          value = _.clone(value);
+        }
+
+        // Don't write empty objects or arrays.
+        if (!_.isDate(value) &amp;&amp; options.minimize &amp;&amp; !_.size(value)) {
+          return;
+        }
+      }
+
+      // Write to object.
+      ret[index] = value;
+    });
+
+    var transform = options.transform;
+
+    // In the case where a subdocument has its own transform function, we need to
+    // check and see if the parent has a transform (options.transform) and if the
+    // child schema has a transform (this.schema.options.toObject) In this case,
+    // we need to adjust options.transform to be the child schema's transform and
+    // not the parent schema's
+    if (true === transform || (this.schema.options.toObject &amp;&amp; transform)) {
+
+      var opts = options.json ? this.schema.options.toJSON : this.schema.options.toObject;
+
+      if (opts) {
+        transform = (typeof options.transform === 'function' ? options.transform : opts.transform);
+      }
+    } else {
+      options.transform = originalTransform;
+    }
+
+    if (typeof transform === 'function') {
+      var xformed = transform(this, ret, options);
+      if (typeof xformed !== 'undefined') {
+        ret = xformed;
+      }
+    }
+
+    return ret;
+  }
+
+  /**
+   * Converts this document into a plain javascript object.
+   *
+   * @api public
+   * @param {Object} options
+   * @param {Function} options.transform - a transform function to apply to the resulting document before returning
+   * @param {Boolean} options.virtuals - apply virtual getters (defaults to false)
+   * @param {Boolean} options.minimize - remove empty objects (defaults to true)
+   *
+   * @return {Object} Plain javascript object representation of document.
+   *
+   * @example
+   * var userSchema = plaster.schema({ name: String });
+   * var User = plaster.model('User', userSchema);
+   * var user = new User({name: 'Joe Smith'});
+   * console.log(user); // automatically invokes toObject()
+   *
+   * @example &lt;caption>Example with transform option.&lt;/caption>
+   * var xform = function (doc, ret, options) {
+   *   ret.name = ret.name.toUpperCase();
+   *   return ret;
+   * };
+   * console.dir(user.toObject({transform: xform}); // { name: 'JOE SMITH' }
+   */
+  toObject(options) {
+    return this._toObject(options);
+  }
+
+  /**
+   * Similar as &lt;code>toObject&lt;/code> but applied when &lt;code>JSON.stringify&lt;/code> is called
+   *
+   * @api public
+   * @param {Object} options
+   * @param {Function} options.transform - a transform function to apply to the resulting document before returning
+   * @param {Boolean} options.virtuals - apply virtual getters (defaults to false)
+   * @param {Boolean} options.minimize - remove empty objects (defaults to true)
+   *
+   * @return {Object} Plain javascript object representation of document.
+   */
+  toJSON(options) {
+    return this._toObject(options, true);
+  }
+
+  /**
+   * Helper for &lt;code>console.log&lt;/code>. Just invokes default &lt;code>toObject&lt;/code>.
+   * @api public
+   */
+  inspect() {
+    return this.toObject({});
+  }
+
+  /**
+   * Helper for &lt;code>console.log&lt;/code>. Alias for &lt;code>inspect&lt;/code>.
+   * @api public
+   */
+  toString() {
+    return this.inspect();
+  }
+
+  /**
+   * Clear the model data.
+   */
+  clear() {
+    _.each(this.schema.descriptor, (properties, index) => {
+      clearField.call(this[_privateKey]._this, index, properties);
+    });
+  }
+
+  /**
+   * Gets the errors object.
+   */
+  getErrors() {
+    return this[_privateKey]._errors;
+  }
+
+  /**
+   * Clears all the errors.
+   */
+  clearErrors() {
+    this[_privateKey]._errors.length = 0;
+  }
+
+  /**
+   * Checks whether we have any errors.
+   * @return {Boolean} &lt;code>true&lt;/code> if we have errors, &lt;code>false&lt;/code> otherwise.
+   */
+  hasErrors() {
+    return !!this[_privateKey]._errors.length;
+  }
+
+  /**
+   * Used to detect instance of schema object internally.
+   * @private
+   */
+  _isModelObject() {
+    return true;
+  }
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Wed Feb 10 2016 21:17:02 GMT-0400 (AST)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
