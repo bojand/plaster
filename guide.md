@@ -1,6 +1,6 @@
 # Plaster
 
-Simple Mongoose-inspired Schema based Javascript Object Modelling
+Simple Mongoose-inspired Schema based Javascript object modelling
 
 **NodeJS >= 0.10 supported. For all features, run node with the harmony proxies ````--harmony_proxies```` and harmony collections ````--harmony```` flags.**
 
