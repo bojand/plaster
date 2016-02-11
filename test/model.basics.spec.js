@@ -761,7 +761,7 @@ describe('Model basics', function () {
         var schema = plaster.schema({
           name: String
         }, {
-          onBeforeValueSet: function (value, key) {
+          onBeforeValueSet: function (key, value) {
             onValueSetTriggered.value = value;
             onValueSetTriggered.key = key;
 

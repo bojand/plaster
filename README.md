@@ -2,7 +2,7 @@
 
 Simple Mongoose-inspired Schema based Javascript Object Modelling
 
-**NodeJS >= 0.10 supported. For all features, run node with the harmony proxies ````--harmony_proxies```` and harmony collections ````--harmony```` flags.**
+**NodeJS >= 0.12 supported. For all features, run node with the harmony proxies ````--harmony_proxies```` and harmony collections ````--harmony```` flags.**
 
 ## Installation
 
