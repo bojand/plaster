@@ -55,6 +55,8 @@ describe('Model basics', function () {
       expect(user.modelName).to.equal('User');
       user.modelName = 'Foo';
       expect(user.modelName).to.equal('User');
+      User.modelName = 'Foo';
+      expect(User.modelName).to.equal('User');
     });
 
     it('Should properly create multiple models from same source data', function () {
