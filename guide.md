@@ -2,7 +2,7 @@
 
 Simple Mongoose-inspired schema based Javascript object modelling
 
-**NodeJS >= 0.12 supported. For all features, run node with the harmony proxies ````--harmony_proxies```` and harmony collections ````--harmony```` flags.**
+**Node.js >= 0.12 supported. For all features, run node with the harmony ````--harmony```` and harmony proxies ````--harmony_proxies```` flags.**
 
 ## Installation
 
@@ -574,6 +574,6 @@ Uses modified code from [node-schema-object](https://github.com/scotthovestadt/n
 
 ## License
 
-Copyright 2016 Bojan D
+Copyright 2016 Bojan D.
 
 Licensed under the MIT License.

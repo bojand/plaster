@@ -1,7 +1,7 @@
 {
   "name": "plaster",
   "description": "Simple Mongoose-inspired schema based Javascript object modelling",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/bojand/plaster",
   "license": "MIT",
   "repository": {

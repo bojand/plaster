@@ -803,7 +803,7 @@ describe('Model basics', function () {
         var schema = plaster.schema({
           name: String
         }, {
-          onValueSet: function (value, key) {
+          onValueSet: function (key, value) {
             onValueSetTriggered.value = value;
             onValueSetTriggered.key = key;
           },
